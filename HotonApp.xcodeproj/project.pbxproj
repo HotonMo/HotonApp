@@ -17,6 +17,7 @@
 		5D3BC1652B62CC3A00851787 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BC1642B62CC3A00851787 /* ContactView.swift */; };
 		5D3BC1672B62CC5400851787 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BC1662B62CC5400851787 /* ProjectsView.swift */; };
 		5D3BC1692B62CC6C00851787 /* AboutmeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BC1682B62CC6C00851787 /* AboutmeView.swift */; };
+		5D9FE0CD2B6378FB00225AE2 /* Modifires.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9FE0CC2B6378FB00225AE2 /* Modifires.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5D3BC1642B62CC3A00851787 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		5D3BC1662B62CC5400851787 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		5D3BC1682B62CC6C00851787 /* AboutmeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutmeView.swift; sourceTree = "<group>"; };
+		5D9FE0CC2B6378FB00225AE2 /* Modifires.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifires.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				5D3BC15E2B62CB4800851787 /* MailHelper.swift */,
+				5D9FE0CC2B6378FB00225AE2 /* Modifires.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D3BC15F2B62CB4800851787 /* MailHelper.swift in Sources */,
+				5D9FE0CD2B6378FB00225AE2 /* Modifires.swift in Sources */,
 				5D3BC1652B62CC3A00851787 /* ContactView.swift in Sources */,
 				5D3BC1612B62CBB400851787 /* ProjectsModel.swift in Sources */,
 				5D3BC14F2B62CAF200851787 /* ContentView.swift in Sources */,

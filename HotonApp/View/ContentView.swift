@@ -12,9 +12,6 @@ struct ContentView: View {
         ScrollView {
             VStack(spacing: 20) {
                 AboutmeView()
-                Text("My iOS projects:")
-                    .font(.title2)
-                    .bold()
                 ProjectsView()
             }.padding(.horizontal,10)
         }

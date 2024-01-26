@@ -10,18 +10,13 @@ import SwiftUI
 struct AboutmeView: View {
     var body: some View {
         VStack{
-            Image("my-avatar").resizable()
-                .frame(width:150 , height: 150)
-                .background(.ultraThinMaterial)
-                .cornerRadius(80)
+            Image("my-avatar") .modifier(Images(height: 150, width: 150))
+                .modifier(Background(cornerRadius: 80))
             Text("Hi, I'm Hoton Alharthi")
-                .font(.title2)
-                .fontWeight(.bold)
+                .modifier(Title(font: .title2))
             Text("Computer science fresh graduate | Passion IOS developer | UI/UX designer ")
-                .padding(6)
-                .background(.ultraThinMaterial)
-                .cornerRadius(10)
-                .font(.body)
+                .modifier(Background(cornerRadius: 10, padding: 6))
+              
         }
     }
 }

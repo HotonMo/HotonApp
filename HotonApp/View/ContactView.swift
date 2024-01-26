@@ -15,22 +15,22 @@ struct ContactView: View {
     var body: some View {
         
         VStack{
-            Text("Get in touch")
-                .font(.title2).bold()
+            Text("Get in touch").modifier(Title(font: .title2))
             HStack(alignment: .center, spacing: 30){
                 LinkedIn
                 mail
                 phone
-            }.padding()
-                .background(.ultraThinMaterial)
-                .cornerRadius(10)
+            }.modifier(Background(cornerRadius: 10,padding: 16))
         }
     }
 }
+
+
 extension ContactView {
     var LinkedIn: some View {
         Link(destination: URL(string: contact.linkedin.data)!) {
-            contact.linkedin.image.resizable() .scaledToFit().frame(width:50, height:50)
+            contact.linkedin.image
+                .modifier(Images(height: 50, width: 50))
         }
     }
     
@@ -38,14 +38,15 @@ extension ContactView {
         Button {
             MFMailComposeViewController.canSendMail() ? self.isShowingMailView.toggle() : self.alertNoMail.toggle()
         } label: {
-            contact.mail.image.resizable() .scaledToFit().frame(width:50, height:50)
+            contact.mail.image
+                .modifier(Images(height: 50, width: 50))
         }
         .sheet(isPresented: $isShowingMailView) {
             MailView(result: self.$result, recipients: [contact.mail.data])
         }
         .alert(isPresented: self.$alertNoMail) {
-                       Alert(title: Text("This device not support mail"))
-                   }
+            Alert(title: Text("This device not support mail"))
+        }
     }
     
     var phone: some View {
@@ -55,7 +56,8 @@ extension ContactView {
             guard let url = URL(string: formattedString) else { return }
             UIApplication.shared.open(url)
         } label: {
-            contact.phone.image.resizable() .scaledToFit().frame(width:50, height:50)
+            contact.phone.image
+                .modifier(Images(height: 50, width: 50))
         }
     }
 }
